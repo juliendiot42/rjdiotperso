@@ -1,0 +1,11 @@
+citHeader("To cite rjdiotperso use:")
+
+citEntry(entry = "Misc",
+  title        = "Julien Diot's personal R code in {rjdiotperso}",
+  author       = personList(as.person("Julien Diot")),
+  url          = "https://github.com/juliendiot42/rjdiotperso",
+
+  textVersion  =
+  paste("Julien Diot's personal R code.",
+        "URL https://github.com/juliendiot42/rjdiotperso.")
+)
