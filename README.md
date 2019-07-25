@@ -20,7 +20,7 @@ See also citation() for citing R itself.
 ## Installation
 To install this package, the easiest is to directly install the package from GitHub:
 ```
-R> install.package("devtools")
+R> install.packages("devtools")
 R> devtools::install_github("juliendiot42/rjdiotperso")
 ```
 
