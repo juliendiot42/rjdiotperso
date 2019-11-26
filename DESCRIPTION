@@ -1,14 +1,17 @@
 Package: rjdiotperso
 Title: Julien Diot's personal R code
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: person("Julien", "Diot", email = "juliendiot42@gmail.com", role = c("aut", "ctb", "cre"))
 Description: This package contains Julien Diot's personal R code, which can nevertheless be useful to others.
 Depends: R (>= 3.5.0)
-License: GPL-3
+License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/juliendiot42/rjdiotperso
 BugReports: https://github.com/juliendiot42/rjdiotperso/issues
-RoxygenNote: 6.0.1
+RoxygenNote: 7.0.0
+Imports:
+    stringr
 Suggests:
-    plotly
+    plotly,
+    testthat

@@ -4,8 +4,15 @@
 \alias{plotdnorm}
 \title{plotdnorm}
 \usage{
-plotdnorm(mean = 0, sd = 1, from = mean - 5 * sd, to = mean + 5 * sd,
-  by = 0.01, log = FALSE, ...)
+plotdnorm(
+  mean = 0,
+  sd = 1,
+  from = mean - 5 * sd,
+  to = mean + 5 * sd,
+  by = 0.01,
+  log = FALSE,
+  ...
+)
 }
 \arguments{
 \item{mean}{mean}
