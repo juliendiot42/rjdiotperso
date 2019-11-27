@@ -1,4 +1,4 @@
-image: rocker/r-devel
+image: rocker/verse
 
 stages:
   - document
