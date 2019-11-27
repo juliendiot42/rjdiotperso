@@ -13,6 +13,7 @@ RoxygenNote: 7.0.0
 Imports:
     stringr
 Suggests:
+    devtools
     plotly,
     testthat
     covr
