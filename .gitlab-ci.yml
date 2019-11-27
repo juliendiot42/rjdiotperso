@@ -8,7 +8,7 @@ stages:
 
 before_script:
   - apt-get update
-  - r -e 'install.packages(c("devtools", "roxygen2", "testthat", "covr"))
+  - r -e 'install.packages(c("devtools", "roxygen2", "testthat", "covr"))'
   - r -e 'devtools::install_deps()'
 
 documentation:
