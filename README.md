@@ -1,3 +1,7 @@
+[![pipeline status](https://gitlab.com/juliendiot42/rjdiotperso/badges/master/pipeline.svg)](https://gitlab.com/juliendiot42/rjdiotperso/commits/master)
+[![codecov](https://codecov.io/gh/juliendiot42/rjdiotperso/branch/master/graph/badge.svg)](https://codecov.io/gh/juliendiot42/rjdiotperso)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 Package "rjdiotperso"
 =====================
 
