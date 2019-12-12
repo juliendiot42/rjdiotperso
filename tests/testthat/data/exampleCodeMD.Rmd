@@ -24,4 +24,6 @@ require("forcats")
 require(httr)
 require('lme4')
 
+suppressPackageStartupMessages(library(usethis))
+suppressPackageStartupMessages(require(xml2))
 ```

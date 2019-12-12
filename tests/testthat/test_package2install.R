@@ -23,14 +23,16 @@ test_that(".findPackages works for library and require", {
                    "devtools",
                    "forcats",
                    "httr",
-                   "lme4"))
+                   "lme4",
+                   "usethis",
+                   "xml2"))
 })
 
 
 test_that("packages2Install works for library and require", {
     expect_output(
         packages2Install(dir),
-        "install\\.packages\\(c\\(\"broom\", \"devtools\", \"forcats\", \"httr\", \"lme4\", \"MASS\", \"plotly\", \"plumber\", \"rmarkdown\", \"shiny\", \"testthat\"\\)\\)"
+        "install\\.packages\\(c\\(\"broom\", \"devtools\", \"forcats\", \"httr\", \"lme4\", \"MASS\", \"plotly\", \"plumber\", \"rmarkdown\", \"shiny\", \"testthat\", \"usethis\", \"xml2\"\\)\\)"
     )
 })
 
