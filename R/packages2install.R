@@ -27,15 +27,17 @@ packages2Install <- function(path = getwd(), file = NA, quote = "\"") {
   # extract all R files
   rFiles <- list.files(path = path,
                        recursive = T,
-                       pattern = ".*\\.R$", # all files ending by ".R"
+                       pattern = ".*\\.R(md)?$", # all files ending by ".R"
                        full.names = TRUE)
 
   if (length(rFiles) == 0) {
-    stop(paste0("No \".R\" files found in ", path))
+    stop(paste0("No \".R\" or \".Rmd\" files found in ", path))
   }
 
   # extract loaded packages
-  allPkgs <- unlist(sapply(rFiles, .findPackages, USE.NAMES = FALSE))
+  allPkgs <- unlist(sapply(rFiles, .findPackages,
+                           simplify = FALSE,
+                           USE.NAMES = FALSE))
   allPkgs <- unique(allPkgs)
   allPkgs <- stringr::str_sort(allPkgs)
   allPkgs <- paste0(allPkgs, collapse = paste0(quote, ", ", quote))
