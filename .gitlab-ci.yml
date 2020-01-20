@@ -20,7 +20,8 @@ check:
     - r -e 'devtools::build()'
     - ls -la
     - ls -la ..
-    - R CMD check --as-cran ..\rjdiotperso_0.0.2.tar.gz
+    - cd ..
+    - R CMD check --as-cran rjdiotperso_0.0.2.tar.gz
 
 unittests:
   stage: TestPackage
