@@ -16,10 +16,7 @@ documentation:
 check:
   stage: TestPackage
   script:
-    - pwd
     - r -e 'devtools::build()'
-    - ls -la
-    - ls -la ..
     - cd ..
     - R CMD check --as-cran rjdiotperso_0.0.2.tar.gz
 
