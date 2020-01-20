@@ -5,7 +5,7 @@ stages:
 
 before_script:
   - apt-get update
-  - r -e 'install.packages(c("devtools", "roxygen2", "testthat", "covr"))'
+  - r -e 'install.packages(c("devtools", "roxygen2", "testthat", "covr", "plotly"))'
   - r -e 'devtools::install_deps()'
 
 documentation:
@@ -18,7 +18,7 @@ check:
   script:
     - r -e 'devtools::build()'
     - cd ..
-    - R CMD check --as-cran rjdiotperso_0.0.2.tar.gz
+    - R CMD check --as-cran "rjdiotperso_*.tar.gz"
 
 unittests:
   stage: TestPackage

@@ -1,5 +1,5 @@
 Package: rjdiotperso
-Title: Julien Diot's personal R code
+Title: Julien Diot's Personal R Code
 Version: 0.0.2
 Authors@R: c(
     person("Julien", "Diot", email="juliendiot@ut-biomet.org", role=c("aut","ctb", "cre"),
@@ -8,7 +8,7 @@ Authors@R: c(
 Maintainer: Julien Diot <juliendiot@ut-biomet.org>
 Description: This package contains Julien Diot's personal R code, which can nevertheless be useful to others.
 Depends: R (>= 3.5.0)
-License: GPL-3 + file LICENSE
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/juliendiot42/rjdiotperso
