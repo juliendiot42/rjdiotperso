@@ -18,7 +18,9 @@ check:
   script:
     - pwd
     - r -e 'devtools::build()'
-    - R CMD check --as-cran ..\rjdiotperso_0.0.1.tar.gz
+    - ls -la
+    - ls -la ..
+    - R CMD check --as-cran ..\rjdiotperso_0.0.2.tar.gz
 
 unittests:
   stage: TestPackage
