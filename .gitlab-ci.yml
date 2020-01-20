@@ -16,7 +16,8 @@ documentation:
 check:
   stage: TestPackage
   script:
-    - R CMD check --as-cran
+    - ls -la
+    - R CMD check --as-cran rjdiotperso
 
 unittests:
   stage: TestPackage
